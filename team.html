@@ -495,12 +495,13 @@
         <hr class="text-light mt-5 mb-4" />
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
-            <span class="text-light"
-              ><a href="#" class="text-secondary"
-                ><i class="fas fa-copyright text-secondary me-2"></i>Seastrel
-                International Limited</a
-              >, All right reserved.</span
-            >
+            <span class="text-light">
+              <a href="#" class="text-secondary">
+                <i class="fas fa-copyright text-secondary me-2"></i>
+                <span id="current-year"></span>
+                | Seastrel International Limited </a
+              >| All rights reserved .
+            </span>
           </div>
         </div>
       </div>
@@ -522,5 +523,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+      });
+    </script>
   </body>
 </html>

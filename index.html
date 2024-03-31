@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Seastrel - IT Solutions Website</title>
-    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -115,11 +115,7 @@
             id="navbarCollapse"
           >
             <div class="navbar-nav ms-auto mx-xl-auto p-0">
-              <a
-                href="index.html"
-                class="nav-item nav-link active text-secondary"
-                >Home</a
-              >
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
               <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -1019,7 +1015,7 @@
                 <div class="ms-3">
                   <h4 class="text-primary">Address</h4>
                   <a
-                    href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6"
+                    href="https://maps.app.goo.gl/x6hjxRijZ8JBSB2W7"
                     target="_blank"
                     class="h5"
                     >23 Life Camp, Abuja</a
@@ -1065,12 +1061,15 @@
               <div class="p-5 h-100 rounded contact-map">
                 <iframe
                   class="rounded w-100 h-100"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd"
-                  style="border: 0"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3939.8485315488515!2d7.405016075233207!3d9.077560288226513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1711890413024!5m2!1sen!2sng"
+                  width="600"
+                  height="450"
+                  style="border:0;"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                >
+                </iframe>
               </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
@@ -1225,12 +1224,13 @@
         <hr class="text-light mt-5 mb-4" />
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
-            <span class="text-light"
-              ><a href="#" class="text-secondary"
-                ><i class="fas fa-copyright text-secondary me-2"></i>Seastrel
-                International Limited</a
-              >, All right reserved.</span
-            >
+            <span class="text-light">
+              <a href="#" class="text-secondary">
+                <i class="fas fa-copyright text-secondary me-2"></i>
+                <span id="current-year"></span>
+                | Seastrel International Limited </a
+              >| All rights reserved .
+            </span>
           </div>
         </div>
       </div>
@@ -1252,5 +1252,11 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+      });
+    </script>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Seastrel - IT Solutions Website</title>
+        <link rel="icon" type="image/ico" href="img/favicon.ico" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -38,21 +39,47 @@
         <!-- Topbar Start -->
         <div class="container-fluid bg-dark py-2 d-none d-md-flex">
             <div class="container">
-                <div class="d-flex justify-content-between topbar">
-                    <div class="top-info">
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Life Camp, Abuja</small>
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Seastrel.ltd@gmail.com</small>
-                    </div>
-                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Note :We Are Your Number 1 Trusted Partner</small></div>
-                    <div class="top-link">
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                    </div>
+              <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                  <small class="me-3 text-white-50"
+                    ><a href="#"
+                      ><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a
+                    >23 Life Camp, Abuja</small
+                  >
+                  <small class="me-3 text-white-50"
+                    ><a href="#"
+                      ><i class="fas fa-envelope me-2 text-secondary"></i></a
+                    >Seastrel.ltd@gmail.com</small
+                  >
                 </div>
+                <div id="note" class="text-secondary d-none d-xl-flex">
+                  <small>Note : We Are Your Number 1 Trusted Partner</small>
+                </div>
+                <div class="top-link">
+                  <a
+                    href="https://www.facebook.com/seastrel"
+                    class="bg-light nav-fill btn btn-sm-square rounded-circle"
+                    ><i class="fab fa-facebook-f text-primary"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/seastrelhq"
+                    class="bg-light nav-fill btn btn-sm-square rounded-circle"
+                    ><i class="fab fa-twitter text-primary"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/seastrelhq"
+                    class="bg-light nav-fill btn btn-sm-square rounded-circle"
+                    ><i class="fab fa-instagram text-primary"></i
+                  ></a>
+                  <a
+                    href=""
+                    class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"
+                    ><i class="fab fa-linkedin-in text-primary"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         <!-- Topbar End -->
 
         <!-- Navbar Start -->
@@ -298,9 +325,15 @@
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Seastrel International Limited</a>, All right reserved.</span>
+                      <span class="text-light">
+                        <a href="#" class="text-secondary">
+                          <i class="fas fa-copyright text-secondary me-2"></i>
+                          <span id="current-year"></span>
+                          | Seastrel International Limited </a
+                        >| All rights reserved .
+                      </span>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
         <!-- Footer End -->
@@ -320,6 +353,12 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var year = new Date().getFullYear();
+              document.getElementById("current-year").textContent = year;
+            });
+          </script>
     </body>
 
 </html>
